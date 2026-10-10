@@ -1,0 +1,1 @@
+snippets: hooks (input/submit @name expansion, prompt/context) ✓ · commands (/snip save/del/show/list) ✓ · state (~/.gray/snippets/snippets.json) ✓ · CLI (manifest, save, show, list, del) ✓
