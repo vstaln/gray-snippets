@@ -149,6 +149,7 @@ fn cli(argv: &[String]) -> Result<String, String> {
                 .collect::<Vec<_>>()
                 .join("\n"))
         }
+        Some("-h" | "--help" | "help") => Ok(usage()),
         Some(_) => Err(usage()),
     }
 }
