@@ -22,6 +22,7 @@ fn manifest() -> Value {
         "tools": [],
         "description": "named prompt snippets expanded with @name",
         "commands": ["/snip"],
+        "command_descriptions": {"/snip": "save and list prompt snippets"},
         "hooks": ["input/submit", "prompt/context"],
     })
 }
