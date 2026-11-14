@@ -20,7 +20,7 @@ fn manifest() -> Value {
         "version": env!("CARGO_PKG_VERSION"),
         "protocol": "1.1",
         "tools": [],
-        "description": "named",
+        "description": "named prompt snippets expanded with @name",
         "commands": ["/snip"],
         "hooks": ["input/submit", "prompt/context"],
     })
