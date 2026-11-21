@@ -82,9 +82,9 @@ fn expand(text: &str, snips: &BTreeMap<String, String>) -> Option<String> {
     while let Some(at) = rest.find('@') {
         out.push_str(&rest[..at]);
         let tail = &rest[at + 1..];
-        if tail.starts_with('@') {
+        if let Some(after) = tail.strip_prefix('@') {
             out.push('@');
-            rest = &tail[1..];
+            rest = after;
             changed = true;
             continue;
         }
